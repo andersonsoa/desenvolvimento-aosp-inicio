@@ -1,5 +1,8 @@
 ## 1. Baixando o Código-Fonte do AOSP
 
+### 1.4. Explorando o Código do AOSP
+:TODO:
+
 ### 1.5. Usando o Android Code Search
 ---
 packages/apps/Settings/res/values-pt/strings.xml
