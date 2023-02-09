@@ -62,6 +62,63 @@ export | grep "ANDROID_JAVA_HOME"
 ```bash
 m
 ```
+![image](https://user-images.githubusercontent.com/19675356/217676231-fd7bd16e-41d2-48ed-bf3b-6784b1538e40.png)
+
+
+```bash
+ls -lh out/target/product/emulator_x86_64/system-qemu.img 
+```
+![image](https://user-images.githubusercontent.com/19675356/217676386-418597af-1391-492f-ba28-100b5bfdab33.png)
+
+
+### 2.4. Executando o Emulador
+---
+```bash
+emulator &
+```
+![image](https://user-images.githubusercontent.com/19675356/217678511-fef4aa99-7455-4369-ac9b-ce7fa394654e.png)
+
+
+### 2.5. Modificando o Código-Fonte I - Settings
+---
+```bash
+nano packages/apps/Settings/res/values/strings.xml
+```
+![image](https://user-images.githubusercontent.com/19675356/217679016-c289ed50-2fb3-4312-8df4-8126e52420e7.png)
+
+
+```bash
+m
+```
+![image](https://user-images.githubusercontent.com/19675356/217682390-3aaaa8dd-1133-46c9-a353-83362ef5fa58.png)
+
+
+```bash
+emulator
+```
+![image](https://user-images.githubusercontent.com/19675356/217682801-6618c2f6-6dd4-4e67-b197-8acbb9671ec9.png)
+
+
+```bash
+cd packages/apps/Settings
+git status
+```
+![image](https://user-images.githubusercontent.com/19675356/217682890-446faa55-c1ef-4546-b89a-693996564b58.png)
+
+
+```bash
+git reset --hard HEAD
+git status
+croot
+```
+![image](https://user-images.githubusercontent.com/19675356/217683087-4478dde8-4fc9-4eab-80f1-dba0e6da1db6.png)
+
+
+### 2.6. Modificando o Código-Fonte II - Screenshot Watermark
+---
+```bash
+
+```
 
 
 ```bash
