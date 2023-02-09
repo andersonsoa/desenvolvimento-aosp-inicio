@@ -116,19 +116,38 @@ croot
 
 ### 2.6. Modificando o Código-Fonte II - Screenshot Watermark
 ---
+
+- Sem modificação
 ```bash
-
+adb shell "
+su root sendevent /dev/input/event1 1 114 1
+su root sendevent /dev/input/event1 1 116 1
+su root sendevent /dev/input/event1 0 0 0
+sleep 1
+su root sendevent /dev/input/event1 1 114 0
+su root sendevent /dev/input/event1 1 116 0
+su root sendevent /dev/input/event1 0 0 0"
 ```
-
+![image](https://user-images.githubusercontent.com/19675356/217688931-bf33ef1c-5094-4667-a0aa-2d9884f6803f.png)
 
 ```bash
-
+gedit frameworks/native/services/surfaceflinger/SurfaceFlinger.cpp
 ```
+![image](https://user-images.githubusercontent.com/19675356/217686464-7fc488b3-f740-45eb-bb63-8dff0da12ed3.png)
 
-
+- Com modificação
 ```bash
-
+adb shell "
+su root sendevent /dev/input/event1 1 114 1
+su root sendevent /dev/input/event1 1 116 1
+su root sendevent /dev/input/event1 0 0 0
+sleep 1
+su root sendevent /dev/input/event1 1 114 0
+su root sendevent /dev/input/event1 1 116 0
+su root sendevent /dev/input/event1 0 0 0"
 ```
+![image](https://user-images.githubusercontent.com/19675356/217688977-7413516d-15a7-48de-b76a-3e7060d51763.png)
+
 
 
 ```bash
