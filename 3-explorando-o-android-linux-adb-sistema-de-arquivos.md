@@ -146,15 +146,20 @@ cat /data/system/packages.list | grep "com.android.contacts"
 ```
 ![image](https://user-images.githubusercontent.com/19675356/217969442-8eb18e9c-f2b0-4529-98a8-c8f188319dc9.png)
 
+![image](https://user-images.githubusercontent.com/19675356/217970101-49ee52d3-6de3-4d52-850d-6d89decceb90.png)
 
 ```bash
-
+ cd /data/data/com.android.contacts 
+ ls -al
 ```
+![image](https://user-images.githubusercontent.com/19675356/217970290-6d12523f-4917-437f-b927-c0688b7297a2.png)
 
-
+### 3.6. Grupos e Permissões de Apps
+---
 ```bash
-
+ nano system/core/libcutils/include/private/android_filesystem_config.h
 ```
+![image](https://user-images.githubusercontent.com/19675356/217971020-adbe426f-4376-40be-a29e-67b9033bbf46.png)
 
 
 ```bash
