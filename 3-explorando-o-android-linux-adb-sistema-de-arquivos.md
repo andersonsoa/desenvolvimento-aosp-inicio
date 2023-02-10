@@ -115,6 +115,69 @@ nano system/core/libcutils/include/private/android_filesystem_config.h
 ### 3.4. I am Root
 ---
 ```bash
+su
+```
+![image](https://user-images.githubusercontent.com/19675356/217968240-9ac90b5e-bbca-4126-8738-1ed9f8b22408.png)
+
+
+```bash
+whoami
+id
+```
+![image](https://user-images.githubusercontent.com/19675356/217968298-c1543824-ab81-48ad-9e0c-0a228c785548.png)
+
+
+### 3.5. Usuários como Primeira Linha de Defesa
+---
+```bash
+ps -ef | grep -v grep | grep gallery
+```
+![image](https://user-images.githubusercontent.com/19675356/217968429-3e3ba9c6-a820-4218-860c-8cf7f044599a.png)
+
+
+```bash
+ps -ef | grep -v grep | grep contacts
+```
+![image](https://user-images.githubusercontent.com/19675356/217969003-acfe88a3-47cc-4b6b-b1cb-9ae6e91b52ea.png)
+
+
+```bash
+cat /data/system/packages.list | grep "com.android.contacts"
+```
+![image](https://user-images.githubusercontent.com/19675356/217969442-8eb18e9c-f2b0-4529-98a8-c8f188319dc9.png)
+
+
+```bash
+
+```
+
+
+```bash
+
+```
+
+
+```bash
+
+```
+
+
+```bash
+
+```
+
+
+```bash
+
+```
+
+
+```bash
+
+```
+
+
+```bash
 
 ```
 
