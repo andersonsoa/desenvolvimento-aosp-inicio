@@ -163,40 +163,17 @@ cat /data/system/packages.list | grep "com.android.contacts"
 
 
 ```bash
-
+su u0_a72
+id
 ```
+![image](https://user-images.githubusercontent.com/19675356/217971632-a3ef60fb-6f23-45b2-a6d3-cfa8baf74a96.png)
 
 
 ```bash
-
+nano packages/apps/Contacts/AndroidManifest.xml 
 ```
+![image](https://user-images.githubusercontent.com/19675356/217971881-5b58c148-6166-4857-964c-1302877ae367.png)
 
 
-```bash
-
-```
 
 
-```bash
-
-```
-
-
-```bash
-
-```
-
-
-```bash
-
-```
-
-
-```bash
-
-```
-
-
-```bash
-
-```
